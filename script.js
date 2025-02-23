@@ -127,7 +127,7 @@ themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
 });
 
-// ========== REORDER LOGIC VIA DRAG END ==========
+// REORDERS LOGIC VIA DRAG END
 
 // Helper: move array item from oldIndex to newIndex
 function arrayMove(arr, fromIndex, toIndex) {
