@@ -65,7 +65,7 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 
 | 🌞 Light Mode | 🌙 Dark Mode |
 | ------------- | ------------ |
-| ![Light Mode Screenshot](https://github.com/ShahabCompSci/Study-Tracker/raw/main/assets/images/light-mode.png) | ![Dark Mode Screenshot](https://github.com/ShahabCompSci/Study-Tracker/raw/main/assets/images/dark-mode.png) |
+| ![Light Mode Screenshot](https://github.com/user-attachments/assets/6c28619f-ab20-4475-99fe-ed91cc1c71ad) | ![Dark Mode Screenshot](https://github.com/user-attachments/assets/8c1bc1ff-2b6f-4d2c-b20f-0ff7d2968f91) |
 
 
 
