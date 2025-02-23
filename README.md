@@ -37,7 +37,14 @@ Drag tasks up or down to reorder them ↕️
 Click on any task to write notes in the dedicated notes panel 📝
 Click Switch Theme to toggle between Light and Dark mode 🌗
 
-🚧 Future Enhancements
+## ✨ **Screenshots**
+
+| 🌞 Light Mode | 🌙 Dark Mode |
+| ------------- | ------------ |
+| ![Light Mode Screenshot](./assets/images/light-mode.png) | ![Dark Mode Screenshot](./assets/images/dark-mode.png) |
+
+
+## 🚧 Future Enhancements
 🔄 Add recurring tasks
 📆 Calendar integration for scheduling
 🔔 Notification reminders
