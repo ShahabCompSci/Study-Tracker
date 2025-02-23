@@ -13,6 +13,11 @@ Designed for:
 
 It offers a **sleek** and **easy-to-use task manager** to stay organized.
 
+## ✨ **Screenshots**
+
+| 🌞 Light Mode | 🌙 Dark Mode |
+| ------------- | ------------ |
+| ![Light Mode Screenshot](https://github.com/user-attachments/assets/6c28619f-ab20-4475-99fe-ed91cc1c71ad) | ![Dark Mode Screenshot](https://github.com/user-attachments/assets/8c1bc1ff-2b6f-4d2c-b20f-0ff7d2968f91) |
 
 ## 🚀 **Features**
 
@@ -59,30 +64,6 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 6. ↕️ **Reorder Tasks**: Drag tasks up or down to rearrange their order  
 7. 📝 **Add Notes**: Click on a task and write notes for it in the notes panel  
 8. 🌗 **Switch Theme**: Click the **Switch Theme** button to toggle between Light and Dark mode  
-
-
-## ✨ **Screenshots**
-
-| 🌞 Light Mode | 🌙 Dark Mode |
-| ------------- | ------------ |
-| ![Light Mode Screenshot](https://github.com/user-attachments/assets/6c28619f-ab20-4475-99fe-ed91cc1c71ad) | ![Dark Mode Screenshot](https://github.com/user-attachments/assets/8c1bc1ff-2b6f-4d2c-b20f-0ff7d2968f91) |
-
-
-
-## 🚧 **Future Enhancements**
-
-- 🔄 Add **recurring tasks** for daily/weekly habits  
-- 📆 **Calendar integration** for scheduling tasks  
-- 🔔 **Notification reminders** for deadlines  
-- ☁️ **Cloud sync** to access your tasks across multiple devices  
-
-
-## 🤝 **Contributing**
-
-Contributions are always welcome! 🙌  
-Here’s how you can help:
-- 📩 Submit a **pull request** with improvements or bug fixes  
-- 📝 Open an **issue** if you encounter any problems or want to suggest features  
 
 
 ## 📜 **License**
