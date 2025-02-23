@@ -1,0 +1,285 @@
+:root {
+    /* Light Theme Variables */
+    --background-color: #fffbee;
+    --text-color: #443c2f;
+    --primary-color: #f08a5d;  /* Accent color */
+    --secondary-color: #fce4c2; /* Panel background */
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+  
+    /* Shared sizes */
+    --task-height: 80px;
+    --task-hover-lift: -3px;
+    --task-wrapper-gap: 0.75rem;
+    --border-radius: 1rem;
+    --box-shadow: 0 6px 20px var(--box-shadow-color);
+  }
+  
+  .dark-theme {
+    /* Override variables for Dark Theme */
+    --background-color: #1e1e1e;
+    --text-color: #f4f4f4;
+    --primary-color: #f08a5d; 
+    --secondary-color: #2b2b2b; 
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+    --box-shadow: 0 6px 20px var(--box-shadow-color);
+  }
+  
+  /* Base Body Styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  /* Main Layout Container */
+  .main-container {
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 2rem;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .container {
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  /* Priority Section */
+  .priority-section {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  #prioritySelect {
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  /* Dark theme override for select element (optional) */
+  .dark-theme #prioritySelect {
+    background-color: #444;
+    color: #f4f4f4;
+    border: 1px solid #666;
+  }
+  
+  /* Right Panel (Notes) */
+  .right-panel {
+    flex: 1;
+    background: var(--secondary-color);
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  #taskInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .dark-theme #taskInput {
+    background-color: #444;
+    color: #f4f4f4;
+    border-color: #666;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #eb7a4b; /* Slightly darker shade */
+    transform: translateY(-2px);
+  }
+  
+  /* Task List (no fixed height => grows as needed) */
+  .task-list {
+    margin-top: 1rem;
+  }
+  
+  /* Wrapper for numbering + actual task box */
+  .task-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--task-wrapper-gap);
+  }
+  
+  /* The numbering (1., 2., 3., etc.) */
+  .task-index {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    text-align: right;
+  }
+  
+  /* Task Box */
+  .task {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    height: var(--task-height);
+    padding: 0 1rem;
+    cursor: grab;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .task:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    transform: translateY(var(--task-hover-lift));
+  }
+  
+  .dark-theme .task:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  /* The main text (and optional priority) within the task */
+  .task-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Right side: check & bin side by side */
+  .task-actions {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+  }
+  
+  /* Icons for 'Complete' and 'Delete' */
+  .complete-btn,
+  .delete-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: inherit; /* So it inherits dark theme text color */
+  }
+  
+  .complete-btn:hover,
+  .delete-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Notes Textarea */
+  #notes {
+    width: 100%;
+    height: 300px;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: 2px solid #ccc;
+    resize: none;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  #notes:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .dark-theme #notes {
+    background-color: #444;
+    color: #f4f4f4;
+    border-color: #666;
+  }
+  
+  /* Theme Switcher */
+  .theme-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #toggleTheme {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+  }
+  

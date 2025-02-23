@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="theme-switcher">
+    <button id="toggleTheme">Switch Theme</button>
+  </div>
+
+  <div class="main-container">
+    <div class="left-panel">
+      <div class="container">
+        <h1>Today's To-Do List</h1>
+        <!-- Task Form -->
+        <form id="taskForm">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter study task..."
+            required
+          />
+          <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Priority Title & Select -->
+        <div class="priority-section">
+          <label for="prioritySelect"><strong>Priority:</strong></label>
+          <select id="prioritySelect">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+
+        <!-- Task List -->
+        <div class="task-list" id="taskList"></div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2>Notes</h2>
+      <textarea id="notes" placeholder="Write notes for the selected task..."></textarea>
+    </div>
+  </div>
+
+  <!-- Interact.js for drag-and-drop -->
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <!-- Our custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
