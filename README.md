@@ -2,7 +2,6 @@
 
 A simple, yet powerful productivity tool to help you **organize your study sessions**. Add tasks, assign priorities, take quick notes, and rearrange tasks with an intuitive **drag-and-drop** feature. Switch between 🌞 **Light Mode** and 🌙 **Dark Mode** for a personalized experience.
 
----
 
 ## 🔍 **About the Project**
 
@@ -14,7 +13,6 @@ Designed for:
 
 It offers a **sleek** and **easy-to-use task manager** to stay organized.
 
----
 
 ## 🚀 **Features**
 
@@ -42,7 +40,6 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 - 💾 **Persistent Storage**  
   Your tasks and notes are saved automatically using **localStorage** — no worries about losing progress after closing the browser.
 
----
 
 ## 🛠️ **Tech Stack**
 
@@ -51,7 +48,6 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 - 💻 **JavaScript (Vanilla)** — Main functionality & interactivity  
 - 🔄 **[Interact.js](https://interactjs.io/)** — Smooth drag-and-drop functionality  
 
----
 
 ## 📖 **How to Use**
 
@@ -64,15 +60,13 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 7. 📝 **Add Notes**: Click on a task and write notes for it in the notes panel  
 8. 🌗 **Switch Theme**: Click the **Switch Theme** button to toggle between Light and Dark mode  
 
----
 
 ## ✨ **Screenshots**
 
 | 🌞 Light Mode | 🌙 Dark Mode |
 | ------------- | ------------ |
-| ![Light Mode Screenshot](https://github.com/ShahabCompSci/study-tracker/blob/main/assets/images/light-mode.png?raw=true) | ![Dark Mode Screenshot](https://github.com/ShahabCompSci/study-tracker/blob/main/assets/images/dark-mode.png?raw=true) |
+| ![Light Mode Screenshot](https://github.com/ShahabCompSci/Study-Tracker/assets/images/light-mode.png?raw=true) | ![Dark Mode Screenshot](https://github.com/ShahabCompSci/Study-Tracker/assets/images/dark-mode.png?raw=true) |
 
----
 
 ## 🚧 **Future Enhancements**
 
@@ -81,7 +75,6 @@ It offers a **sleek** and **easy-to-use task manager** to stay organized.
 - 🔔 **Notification reminders** for deadlines  
 - ☁️ **Cloud sync** to access your tasks across multiple devices  
 
----
 
 ## 🤝 **Contributing**
 
@@ -90,14 +83,12 @@ Here’s how you can help:
 - 📩 Submit a **pull request** with improvements or bug fixes  
 - 📝 Open an **issue** if you encounter any problems or want to suggest features  
 
----
 
 ## 📜 **License**
 
 This project is licensed under the **[MIT License](https://opensource.org/licenses/MIT)**.  
 Feel free to **fork** and build upon it for your own projects! 🛠️
 
----
 
 ## 👨‍💻 **Author**
 
